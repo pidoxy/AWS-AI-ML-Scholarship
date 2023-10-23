@@ -48,11 +48,16 @@ def main():
     # the collection of these command line arguments from the function call as
     # the variable in_arg
     in_arg = get_input_args()
+    
+    ## Accesses values of Arguments by printing them
+    print("Argument 1:", in_arg.dir)
+    print("Argument 2:", in_arg.arch)
+    print("Argument 3:", in_arg.dogfile)
 
     # Function that checks command line arguments using in_arg  
     check_command_line_arguments(in_arg)
 
-    sleep(75)
+#     sleep(75)
     # TODO 2: Define get_pet_labels function within the file get_pet_labels.py
     # Once the get_pet_labels function has been defined replace 'None' 
     # in the function call with in_arg.dir  Once you have done the replacements
