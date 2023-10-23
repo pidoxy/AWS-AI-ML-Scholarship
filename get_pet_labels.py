@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 # */AIPND-revision/intropyproject-classify-pet-images/get_pet_labels.py
 #                                                                             
-# PROGRAMMER: 
-# DATE CREATED:                                  
-# REVISED DATE: 
+# PROGRAMMER: Emmanuel Idoko (Pidoxy)
+# DATE CREATED: 10-21-2023                                 
+# REVISED DATE: 10-21-2023
 # PURPOSE: Create the function get_pet_labels that creates the pet labels from 
 #          the image's filename. This function inputs: 
 #           - The Image Folder as image_dir within get_pet_labels function and 
@@ -42,4 +42,63 @@ def get_pet_labels(image_dir):
     """
     # Replace None with the results_dic dictionary that you created with this
     # function
-    return None
+    
+    ## Retrieve the filenames from folder pet_images/
+    filename_list = listdir("pet_images/")
+    pet_labels = []
+
+    ## Print 10 of the filenames from folder pet_images/
+    print("\nPrints 10 filenames from folder pet_images/")
+    for idx in range(0, 40, 1):
+#         print(filename_list[idx].split("_"))
+# condition to format and add to a list the pet labels
+
+    ## Splits lower case string by _ to break into words 
+        word_list_pet_image = filename_list[idx].split("_")
+        pet_name = ""
+        for word in word_list_pet_image:
+            if word.isalpha():
+                pet_name += word + " "
+#         strip off trailing whitespaces
+        pet_name = pet_name.strip()
+        pet_labels.append(pet_name)
+#         if len(filename_list[idx].split("_")) == 3:
+#             pet_labels.append(str(filename_list[idx].split("_")[0].lower()) + " " + str(filename_list[idx].split("_")[1].lower()))
+#         elif len(filename_list[idx].split("_")) == 2:
+#             pet_labels.append(str(filename_list[idx].split("_")[0].lower()))
+#         elif len(filename_list[idx].split("_")) == 4:
+#             pet_labels.append(str(filename_list[idx].split("_")[0].lower()) + " " + str(filename_list[idx].split("_")[1].lower()) + " " + str(filename_list[idx].split("_")[2].lower()))
+#         print("{:2d} file: {:>25}".format(idx + 1, filename_list[idx]) )
+#     print(filename_list)
+    print(pet_labels)
+
+    ## Creates empty dictionary named results_dic
+    results_dic = dict()
+
+    ## Determines number of items in dictionary
+    items_in_dic = len(results_dic)
+    print("\nEmpty Dictionary results_dic - n items=", items_in_dic)
+
+    
+    ## Adds new key-value pairs to dictionary ONLY when key doesn't already exist. This dictionary's value is
+    ## a List that contains only one item - the pet image label
+#     filenames = ["beagle_0239.jpg", "Boston_terrier_02259.jpg"]
+#     pet_labels = ["beagle", "boston terrier"]
+#     print(len(filename_list), len(pet_labels))
+    for idx in range(0, len(filename_list), 1):
+        if filename_list[idx] not in results_dic:
+             results_dic[filename_list[idx]] = [pet_labels[idx]]
+        else:
+             print("** Warning: Key=", filenames[idx], 
+                   "already exists in results_dic with value =", 
+                   results_dic[filename_lists[idx]])
+
+    #Iterating through a dictionary printing all keys & their associated values
+#     print("\nPrinting all key-value pairs in dictionary results_dic:")
+#     for key in results_dic:
+#         print("Filename=", key, "   Pet Label=", results_dic[key][0])
+#     print(results_dic)
+    return results_dic
+## Retrieve the filenames from folder pet_images/
+get_pet_labels("pet_images/")
+
