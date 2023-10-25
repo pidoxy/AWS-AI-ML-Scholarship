@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 # */AIPND-revision/intropyproject-classify-pet-images/print_results_hints.py
 #                                                                             
-# PROGRAMMER: 
-# DATE CREATED:
-# REVISED DATE: 
+# PROGRAMMER: Emmanuel Idoko (Pidoxy)
+# DATE CREATED: 10-21-2023                                 
+# REVISED DATE: 10-24-2023 
 # PURPOSE: This is a *hints* file to help guide students in creating the 
 #          function print_results that prints the results statistics from the
 #          results statistics dictionary (results_stats_dic). It should also
