@@ -320,7 +320,56 @@ Real:                  Dalmatian   Classifier: dalmatian, coach dog, carriage do
 PetLabelDog: 0  ClassLabelDog: 1
 
 # Total Images 40 # Matches: 5 # NOT Matches: 35
-* Doesn't Check the Results Dictionary because 'calculates_results_stats' hasn't been defined.
+
+ ** Statistics from calculates_results_stats() function:
+N Images: 40  N Dog Images:  0  N NotDog Images: 40 
+Pct Corr dog:   0.0 Pct Corr NOTdog:  25.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images: 40  N Dog Images:  0  N NotDog Images: 40 
+Pct Corr dog:   0.0 Pct Corr NOTdog:  25.0  Pct Corr Breed:   0.0
 
 
 *** Results Summary for CNN Model Architecture ALEXNET ***
+N Images            :  40
+N Dog Images        :   0
+40
+ 
+pct_match :12.5
+pct_correct_dogs :0.0
+pct_correct_breed :0.0
+pct_correct_notdogs :25.0
+
+INCORRECT Dog/NOT Dog Assignments:
+Real:           Golden retriever   Classifier:               golden retriever
+Real:        German shepherd dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+Real:                     Beagle   Classifier:               english foxhound
+Real:                  Dalmatian   Classifier: dalmatian, coach dog, carriage dog
+Real:                    Basenji   Classifier:                        basenji
+Real:              Saint bernard   Classifier:      saint bernard, st bernard
+Real:             Boston terrier   Classifier:    boston bull, boston terrier
+Real:               Basset hound   Classifier:           basset, basset hound
+Real:                 Great dane   Classifier:                     great dane
+Real:                      Boxer   Classifier:                          boxer
+Real:             Great pyrenees   Classifier:                         kuvasz
+Real:                     Beagle   Classifier:                         beagle
+Real:             Boston terrier   Classifier:                        basenji
+Real:                    Basenji   Classifier:                        basenji
+Real:             Cocker spaniel   Classifier: cocker spaniel, english cocker spaniel, cocker
+Real:             Great pyrenees   Classifier:                 great pyrenees
+Real:           Golden retriever   Classifier:                tibetan mastiff
+Real:           Golden retriever   Classifier:           afghan hound, afghan
+Real:             Boston terrier   Classifier:    boston bull, boston terrier
+Real:                  Dalmatian   Classifier: dalmatian, coach dog, carriage dog
+Real:           Golden retriever   Classifier:               golden retriever
+Real:                     Collie   Classifier:                         collie
+Real:                     Beagle   Classifier:  walker hound, walker foxhound
+Real:        German shepherd dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+Real:                     Poodle   Classifier:        standard poodle, poodle
+Real:              Saint bernard   Classifier:      saint bernard, st bernard
+Real:                     Poodle   Classifier:        standard poodle, poodle
+Real:        Miniature schnauzer   Classifier:            miniature schnauzer
+Real: German shorthaired pointer   Classifier:     german shorthaired pointer
+Real:                  Dalmatian   Classifier: dalmatian, coach dog, carriage dog
+
+** Total Elapsed Runtime: 0:0:15

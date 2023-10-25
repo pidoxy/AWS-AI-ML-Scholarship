@@ -1,0 +1,30 @@
+
+Prints 10 filenames from folder pet_images/
+['Golden retriever', 'German shepherd dog', 'Beagle', 'cat', 'Dalmatian', 'Basenji', 'Saint bernard', 'Boston terrier', 'Basset hound', 'Great dane', 'Boxer', 'polar bear', 'great horned owl', 'Great pyrenees', 'Beagle', 'Boston terrier', 'Basenji', 'Cocker spaniel', 'Great pyrenees', 'Golden retriever', 'Golden retriever', 'skunk', 'Boston terrier', 'Dalmatian', 'fox squirrel', 'Golden retriever', 'Collie', 'Beagle', 'cat', 'German shepherd dog', 'gecko', 'Poodle', 'cat', 'gecko', 'Saint bernard', 'Rabbit', 'Poodle', 'Miniature schnauzer', 'German shorthaired pointer', 'Dalmatian']
+
+Empty Dictionary results_dic - n items= 0
+Argument 1: uploaded_images/
+Argument 2: alexnet
+Argument 3: dognames.txt
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Prints 10 filenames from folder pet_images/
+['Golden retriever', 'German shepherd dog', 'Beagle', 'cat', 'Dalmatian', 'Basenji', 'Saint bernard', 'Boston terrier', 'Basset hound', 'Great dane', 'Boxer', 'polar bear', 'great horned owl', 'Great pyrenees', 'Beagle', 'Boston terrier', 'Basenji', 'Cocker spaniel', 'Great pyrenees', 'Golden retriever', 'Golden retriever', 'skunk', 'Boston terrier', 'Dalmatian', 'fox squirrel', 'Golden retriever', 'Collie', 'Beagle', 'cat', 'German shepherd dog', 'gecko', 'Poodle', 'cat', 'gecko', 'Saint bernard', 'Rabbit', 'Poodle', 'Miniature schnauzer', 'German shorthaired pointer', 'Dalmatian']
+
+Empty Dictionary results_dic - n items= 0
+
+Pet Image Label Dictionary has 40 key-value pairs.
+Below are 10 of them:
+ 1 key:     Golden_retriever_05223.jpg  label:           Golden retriever
+ 2 key:  German_shepherd_dog_04890.jpg  label:        German shepherd dog
+ 3 key:               Beagle_01141.jpg  label:                     Beagle
+ 4 key:                     cat_01.jpg  label:                        cat
+ 5 key:            Dalmatian_04017.jpg  label:                  Dalmatian
+ 6 key:              Basenji_00974.jpg  label:                    Basenji
+ 7 key:        Saint_bernard_08036.jpg  label:              Saint bernard
+ 8 key:       Boston_terrier_02259.jpg  label:             Boston terrier
+ 9 key:         Basset_hound_01034.jpg  label:               Basset hound
+10 key:           Great_dane_05320.jpg  label:                 Great dane
