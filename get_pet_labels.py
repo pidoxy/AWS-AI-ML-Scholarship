@@ -41,11 +41,12 @@ def get_pet_labels(image_dir):
          index 0 = pet image label (string)
     """
     
-    filename_list = listdir("pet_images/")
+#     filename_list = listdir("pet_images/") -- cause of error
+    filename_list = listdir(image_dir)
     pet_labels = []
 
-    print("\nPrints 10 filenames from folder pet_images/")
-    for idx in range(0, 40, 1):
+    print("\nPrints 10 filenames from folder")
+    for idx in range(0, len(filename_list), 1):
 
         word_list_pet_image = filename_list[idx].split("_")
         pet_name = ""
