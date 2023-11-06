@@ -51,7 +51,8 @@ def get_pet_labels(image_dir):
         word_list_pet_image = filename_list[idx].split("_")
         pet_name = ""
         for word in word_list_pet_image:
-            if word.isalpha():
+#             check for hidden files and avoid them
+            if word.isalpha() and not word.startswith('.'):
                 pet_name += word + " "
 #         strip off trailing whitespaces
         pet_name = pet_name.strip()
