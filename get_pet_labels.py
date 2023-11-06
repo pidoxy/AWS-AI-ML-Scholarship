@@ -55,6 +55,8 @@ def get_pet_labels(image_dir):
                 pet_name += word + " "
 #         strip off trailing whitespaces
         pet_name = pet_name.strip()
+#     use the lower method when extracting the pet labels
+        pet_name = pet_name.lower()
         pet_labels.append(pet_name)
     print(pet_labels)
 
