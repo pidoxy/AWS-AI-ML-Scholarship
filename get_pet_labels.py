@@ -47,18 +47,18 @@ def get_pet_labels(image_dir):
 
     print("\nPrints 10 filenames from folder")
     for idx in range(0, len(filename_list), 1):
-
-        word_list_pet_image = filename_list[idx].split("_")
-        pet_name = ""
-        for word in word_list_pet_image:
-#             check for hidden files and avoid them
-            if word.isalpha() and not word.startswith('.'):
-                pet_name += word + " "
-#         strip off trailing whitespaces
-        pet_name = pet_name.strip()
-#     use the lower method when extracting the pet labels
-        pet_name = pet_name.lower()
-        pet_labels.append(pet_name)
+#         check for hidden files and avoid them
+        if filename_list[idx][0] != '.':
+            word_list_pet_image = filename_list[idx].split("_")
+            pet_name = ""
+            for word in word_list_pet_image:
+                if word.isalpha():
+                    pet_name += word + " "
+    #         strip off trailing whitespaces
+            pet_name = pet_name.strip()
+    #     use the lower method when extracting the pet labels
+            pet_name = pet_name.lower()
+            pet_labels.append(pet_name)
     print(pet_labels)
 
     ## Creates empty dictionary named results_dic
